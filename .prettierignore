@@ -1,0 +1,7 @@
+.next
+coverage
+public
+junit.xml
+storybook-static
+
+CHANGELOG.md

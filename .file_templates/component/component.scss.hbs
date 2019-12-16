@@ -1,0 +1,23 @@
+@import "./../../../scss/index-for-components";
+/*
+ * {{ type }} {{ properCase name }}
+ */
+.{{ typeLetter type }}.{{ properCase name }} {
+
+  /* default / fallback color theme */
+  --{{ name }}-color: var(--color-accent);
+
+  /* base styles */
+  color: var(--color-accent);
+
+  /* modifier */
+  &--foo {
+    --{{ name }}-color: var(--color-highlight)
+  }
+
+  /* states */
+  &.is-bar {
+
+  }
+
+}
