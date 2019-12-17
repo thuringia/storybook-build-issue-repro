@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 {
   "ci": false,
 
@@ -29,35 +28,3 @@
     "@semantic-release/gitlab"
   ]
 }
-=======
-{
-  "ci": false,
-
-  "branches": [
-    { "name": "master" },
-    { "name": "develop", "channel": "next", "prerelease": "beta" }
-  ],
-  "plugins": [
-    [
-      "@semantic-release/commit-analyzer",
-      { "preset": "conventionalcommits", "presetConfig": {}, "parserOpts": {} }
-    ],
-    ["@semantic-release/release-notes-generator", { "preset": "eslint" }],
-    "@semantic-release/npm",
-    [
-      "@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md"
-      }
-    ],
-    [
-      "@semantic-release/git",
-      {
-        "assets": ["package.json", "CHANGELOG.md"],
-        "message": "chore(release): ${nextRelease.version}\n\n${nextRelease.notes}"
-      }
-    ],
-    "@semantic-release/gitlab"
-  ]
-}
->>>>>>> Stashed changes
